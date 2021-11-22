@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style_event.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Registration form</title>
+</head>
+<center>
+    <div class="title">
+        <h1>Volunteer registration</h1>
+        <p>Excited for the event...Come save ur seats!!</p>
+    </div>
+    <hr width="60%">
+    <form method="post" action="register" target="_top">
+        <div style="max-width: 400px;">
+        </div>
+        <div style="display: flex; padding-bottom: 18px;max-width : 450px;">
+            <div style=" margin-left: 0; margin-right: 1%; max-width: 49%;">First name<span style="color: red;"> *</span><br />
+                <input type="text" id="data_2" name="fname" style="max-width: 100%;" class="form-control" />
+            </div>
+            <div style=" margin-left: 1%; margin-right: 0; max-width: 49%;">Last name<span style="color: red;"> *</span><br />
+                <input type="text" id="data_3" name="lname" style="max-width: 100%;" class="form-control" />
+            </div>
+        </div>
+        <div style="padding-bottom: 18px;">Email<span style="color: red;"> *</span><br />
+            <input type="text" id="data_4" name="email" style="max-width : 450px;" class="form-control" />
+        </div>
+        <div style="padding-bottom: 18px;">Phone<span style="color: red;"> *</span><br />
+            <input type="number" id="phone" name="phone" style="max-width : 450px;" class="form-control" />
+        </div>
+        <div style="padding-bottom: 18px;">Age<span style="color: red;"> *</span><br />
+            <input type="number" id="data_10" name="age" style="max-width : 450px;" class="form-control" />
+        </div>
+        <div style="padding-bottom: 18px;">Gender<br />
+            <span class="g"><input type="radio" id="data_6_0" name="gender" value="male">
+                <label for="male">Male</label></span>
+            <span class="g" ><input type="radio" id="data_6_1" name="gender" value="female">
+            <label for="female">Female</label></span>
+            <span class="g" ><input type="radio" id="data_6_2" name="gender" value="other">
+            <label for="other">Other</label></span>
+        </div>
+        <div style="padding-bottom: 18px;">EventNo<span style="color: red;"> *</span><br />
+            <input type="number" id="data_10" name="eventno" style="max-width : 450px;" class="form-control" />
+        </div>
+        <div style="padding-bottom: 18px;">Why do you want to join our campaign?<br />
+            <textarea id="data_8" name="why" style="max-width : 450px;" rows="6" class="form-control"></textarea>
+        </div>
+        <div style="padding-bottom: 18px;"><br />
+            <span><input type="radio" id="data_9_0" name="emailUpdate" value="1" /> I would like to get daily updates</span><br />
+        </div>
+        <div style="padding-bottom: 18px;" ><input class="sub" name="skip_Submit" value="Submit" type="submit" onclick="return validateForm();"/></div>
+    </form>
+
+</center>
+
+</html>
