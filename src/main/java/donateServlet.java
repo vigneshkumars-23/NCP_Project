@@ -36,10 +36,11 @@ public class donateServlet extends HttpServlet{
 			st.close();
 			con.close();
 			PrintWriter out = res.getWriter();
-			out.println("Donated Successfully!");
+			req.getRequestDispatcher("/Payment.jsp").forward(req, res);
 		}
 		catch (Exception e){
 			System.out.println(e);
 		}
+		
 	}
 }
